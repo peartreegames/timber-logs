@@ -1,4 +1,4 @@
-## GameObject Log
+## Timber Logs
 Code from "Creating a simple GameObject Logger for unity" [YouTube video]()
 
 ## Installation
