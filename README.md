@@ -1,5 +1,5 @@
 ## Timber Logs
-Code from "Creating a Runtime Debug Logger in Unity" [YouTube video]()
+Code from "Creating a Runtime Debug Logger in Unity" [YouTube video](https://youtu.be/uq7M8u9YpSo)
 
 ## Installation
 
