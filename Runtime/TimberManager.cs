@@ -103,8 +103,20 @@ namespace PeartreeGames.TimberLogs
                 _timberIndex = Mathf.Min(_timberIndex + 1, ActiveTimbers.Count - 1);
 
             if (keyboard.fKey.wasPressedThisFrame) ToggleInput(true, InputType.Filter);
-            if (keyboard.wKey.wasPressedThisFrame) ActiveTimbers.RemoveAt(_timberIndex);
-            if (keyboard.qKey.wasPressedThisFrame) ActiveTimbers.Clear();
+
+            if (_isFilterOpen) return;
+            if (keyboard.wKey.wasPressedThisFrame)
+            {
+                ActiveTimbers.RemoveAt(_timberIndex);
+                _timberIndex = Mathf.Max(_timberIndex - 1, 0);
+            }
+
+            if (keyboard.qKey.wasPressedThisFrame)
+            {
+                ActiveTimbers.Clear();
+                _timberIndex = 0;
+            }
+            
         }
 
         private void ToggleInput(bool enable, InputType type)

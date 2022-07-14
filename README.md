@@ -1,5 +1,5 @@
 ## Timber Logs
-Code from "Creating a simple GameObject Logger for unity" [YouTube video]()
+Code from "Creating a Runtime Debug Logger in Unity" [YouTube video]()
 
 ## Installation
 
